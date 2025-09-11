@@ -1,0 +1,40 @@
+@page { size: A4; margin: 16mm; }
+* { box-sizing: border-box; }
+html, body { padding: 0; margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: #1f2937; }
+.page { max-width: 800px; margin: 0 auto; padding: 24px; }
+.header { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; border-bottom: 2px solid #e5e7eb; padding-bottom: 12px; }
+.name { font-size: 32px; margin: 0; }
+.role { color: #4b5563; margin-top: 4px; }
+.contacts { list-style: none; padding: 0; margin: 0; text-align: right; font-size: 14px; color: #374151; }
+.contacts li { margin: 2px 0; }
+.contacts a { color: #2563eb; text-decoration: none; }
+.contacts a:hover { text-decoration: underline; }
+
+section { margin-top: 16px; }
+section h2 { font-size: 16px; text-transform: uppercase; letter-spacing: .06em; color: #111827; margin: 0 0 8px; }
+.summary p { margin: 0; line-height: 1.45; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 0; }
+.chips li { background: #eef2ff; color: #1e40af; padding: 6px 10px; border-radius: 999px; font-size: 13px; }
+
+.project { margin-bottom: 12px; }
+.project-head { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+.project-head h3 { margin: 0; font-size: 16px; }
+.project-head a { font-size: 13px; text-decoration: none; color: #2563eb; }
+.project-head a:hover { text-decoration: underline; }
+.project p { margin: 6px 0; color: #374151; line-height: 1.45; }
+.meta { list-style: none; padding: 0; margin: 4px 0 0; display: flex; gap: 8px; font-size: 12px; color: #6b7280; }
+
+.education .degree { font-weight: 600; }
+.education .org, .education .loc { color: #4b5563; font-size: 14px; }
+
+.footer { margin-top: 16px; display: flex; justify-content: flex-end; }
+.print { background: #111827; color: #fff; border: 0; padding: 8px 12px; border-radius: 6px; cursor: pointer; }
+.print:active { transform: translateY(1px); }
+
+@media print {
+  .print { display: none; }
+  .page { padding: 0; }
+}
+
+
